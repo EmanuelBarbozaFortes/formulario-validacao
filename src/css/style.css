@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;   
+    background-attachment: fixed;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    max-width: 1440px;
+
+}
+.infor{
+    width: 39.9%;
+}
+.infor h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+.infor p{
+    margin-top: 30px;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+
+form{
+    position: relative;
+    padding: 25px;
+    background-color: aliceblue;
+    width: 500px;
+}
+.input{
+    margin: 7px 0 ;
+    padding: 10px 15px ;
+    font-size: 20px;
+    height: 60px;
+    width: 450px;
+    border-radius: 7px;
+}
+.input::placeholder{
+    color: #A8A8A8;
+}
+#mensagem{
+    padding: 30px 15px 150px;
+}
+form p{
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 18px;
+}
+button{
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    color: aliceblue;
+    background-color: #3CCC87;
+    width: 450px;
+    height: 60px;
+    border-radius: 7px;
+    border: 2px solid #3CCC87;
+    font-size: 20px;
+}
+.input-container{
+    margin: 8px 0;
+    position: relative;
+}
+
+.border{
+    bottom: -8px;
+    left: 2px;
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.border.invalid{
+    display: block;
+}
+
+.input.invalid{   
+    border: 2px solid red;
+}
+
+.valid{
+    border: 2px solid #3CCC87;
+}
