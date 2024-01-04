@@ -19,8 +19,10 @@ inputText.forEach(input => {
             input.classList.add('valid');
             input.classList.remove('invalid');
             input.nextElementSibling.classList.remove('invalid')
-        } else {
-            input.classList.remove('valid');
+        } else { 
+            input.classList.remove('valid');              
+            input.classList.add('invalid');
+            input.nextElementSibling.classList.add('invalid')
         }
     });
 });
